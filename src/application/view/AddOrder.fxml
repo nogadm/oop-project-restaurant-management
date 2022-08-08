@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.OrderController">
+   <children>
+      <Text fill="#3bcfdb" layoutX="33.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new order" wrappingWidth="425.94073486328125">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="33.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="33.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dishes:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="deliveryBox" layoutX="129.0" layoutY="290.0" prefHeight="25.0" prefWidth="221.0" />
+      <ComboBox fx:id="dishesBox" layoutX="33.0" layoutY="160.0" prefHeight="25.0" prefWidth="149.0" promptText="Open list" />
+      <Button layoutX="117.0" layoutY="199.0" mnemonicParsing="false" onAction="#chooseDishesForNewOrder" prefHeight="25.0" prefWidth="149.0" text="Update dishes">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="addButton" layoutX="208.0" layoutY="164.0" mnemonicParsing="false" text="Add">
+         <toggleGroup>
+            <ToggleGroup fx:id="comp" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="removeButton" layoutX="286.0" layoutY="164.0" mnemonicParsing="false" text="Remove" toggleGroup="$comp" />
+      <TextField fx:id="dishesField" editable="false" layoutX="33.0" layoutY="124.0" prefHeight="25.0" prefWidth="318.0" />
+      <ComboBox fx:id="customerBox" layoutX="129.0" layoutY="243.0" prefHeight="25.0" prefWidth="221.0" />
+      <Text layoutX="33.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer:" wrappingWidth="94.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="436.0" layoutY="296.0" mnemonicParsing="false" onAction="#addOrder" prefHeight="25.0" prefWidth="104.0" text="Add">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

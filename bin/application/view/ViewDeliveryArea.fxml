@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.AreaController">
+   <children>
+      <TextField fx:id="areaID" layoutX="112.0" layoutY="93.0" prefHeight="25.0" prefWidth="100.0" />
+      <Text fill="#3bcfdb" layoutX="39.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View delivery area details" wrappingWidth="470.60736083984375">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="219.0" layoutY="93.0" mnemonicParsing="false" onAction="#areaByID" text="View" />
+      <Text layoutX="39.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Neighborhoods:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery People:" wrappingWidth="192.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deliveries:" wrappingWidth="121.99998982747411">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Time:" wrappingWidth="192.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="idText" layoutX="66.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="nameText" layoutX="101.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="deliveryPersonsText" layoutX="184.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="deliveriesText" layoutX="133.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="neighborhoodText" layoutX="186.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="timeText" layoutX="168.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

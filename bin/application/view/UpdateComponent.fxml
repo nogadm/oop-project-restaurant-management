@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.ComponentController">
+   <children>
+      <TextField fx:id="componentID" layoutX="112.0" layoutY="93.0" prefHeight="25.0" prefWidth="149.0" />
+      <Text fill="#3bcfdb" layoutX="39.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update component details" wrappingWidth="485.94073486328125">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="467.0" layoutY="336.0" mnemonicParsing="false" onAction="#updateComponentInfo" prefHeight="25.0" prefWidth="74.0" text="Update">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="39.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contains:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameField" layoutX="186.0" layoutY="168.0" prefHeight="25.0" prefWidth="131.0" />
+      <TextField fx:id="priceField" layoutX="186.0" layoutY="211.0" prefHeight="25.0" prefWidth="131.0" />
+      <Button layoutX="269.0" layoutY="93.0" mnemonicParsing="false" onAction="#viewComponentBeforeUpdate" prefHeight="25.0" prefWidth="48.0" text="View" />
+      <CheckBox fx:id="glutenBox" layoutX="185.0" layoutY="252.0" mnemonicParsing="false" text="Gluten">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="lactoseBox" layoutX="252.0" layoutY="252.0" mnemonicParsing="false" text="Lactose">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </CheckBox>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.DeliveryController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+      <Text fill="#3bcfdb" layoutX="20.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new regular delivery" wrappingWidth="425.94073486328125">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Button layoutX="57.0" layoutY="295.0" mnemonicParsing="false" onAction="#addRegularDelivery" prefHeight="25.0" prefWidth="149.0" text="Add">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="20.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery" wrappingWidth="74.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Area:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivered:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="262.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="areaBox" layoutX="102.0" layoutY="156.0" prefHeight="25.0" prefWidth="131.0" />
+      <ComboBox fx:id="ordersBox" layoutX="343.0" layoutY="187.0" prefHeight="25.0" prefWidth="149.0" promptText="Open list" />
+      <Button layoutX="343.0" layoutY="295.0" mnemonicParsing="false" onAction="#chooseOrdersForNewDelivery" prefHeight="25.0" prefWidth="149.0" text="Update Orders">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Line endX="-100.0" endY="230.66665649414062" layoutX="347.0" layoutY="86.0" startX="-100.0" startY="5.999992370605469" />
+      <RadioButton fx:id="addButton" layoutX="348.0" layoutY="269.0" mnemonicParsing="false" text="Add">
+         <toggleGroup>
+            <ToggleGroup fx:id="comp" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="removeButton" layoutX="418.0" layoutY="269.0" mnemonicParsing="false" text="Remove" toggleGroup="$comp" />
+      <TextField fx:id="ordersField" editable="false" layoutX="262.0" layoutY="149.0" prefHeight="25.0" prefWidth="318.0" />
+      <ComboBox fx:id="dpBox" layoutX="102.0" layoutY="102.0" prefHeight="23.0" prefWidth="131.0" />
+      <Text layoutX="20.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Person:" wrappingWidth="74.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery" wrappingWidth="74.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="yesButton" layoutX="131.0" layoutY="202.0" mnemonicParsing="false" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="isDelivered" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="noButton" layoutX="189.0" layoutY="202.0" mnemonicParsing="false" selected="true" text="No" toggleGroup="$isDelivered" />
+      <DatePicker fx:id="datePicker" layoutX="102.0" layoutY="233.0" prefHeight="25.0" prefWidth="131.0" />
+   </children>
+</AnchorPane>

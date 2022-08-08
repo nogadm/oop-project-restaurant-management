@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.DPersonController">
+   <children>
+      <Text fill="#3bcfdb" layoutX="36.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add new delivery person" wrappingWidth="517.9407958984375">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="466.0" layoutY="294.0" mnemonicParsing="false" onAction="#addDeliveryPerson" prefHeight="25.0" prefWidth="74.0" text="Add">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="36.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vehicle:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Area:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <TextField fx:id="lastName" layoutX="174.0" layoutY="134.0" prefHeight="25.0" prefWidth="159.0" />
+      <ComboBox fx:id="vehicleBox" layoutX="174.0" layoutY="257.0" prefHeight="25.0" prefWidth="159.0" />
+      <ComboBox fx:id="areaBox" layoutX="174.0" layoutY="294.0" prefHeight="25.0" prefWidth="159.0" />
+      <ComboBox fx:id="genderBox" layoutX="174.0" layoutY="219.0" prefHeight="25.0" prefWidth="159.0" />
+      <Text layoutX="36.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="36.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="birthDate" layoutX="174.0" layoutY="177.0" prefHeight="25.0" prefWidth="159.0" />
+      <TextField fx:id="firstName" layoutX="174.0" layoutY="93.0" prefHeight="25.0" prefWidth="159.0" />
+   </children>
+</AnchorPane>

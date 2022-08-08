@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MenuController">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="111.0" layoutY="299.0" mnemonicParsing="false" onAction="#viewPastOrders" prefHeight="19.0" prefWidth="117.0" text="View orders" textFill="#4a7bdd" underline="true">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="historyArea" editable="false" layoutX="23.0" layoutY="69.0" prefHeight="224.0" prefWidth="293.0" />
+      <Text fill="#3bcfdb" layoutX="23.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Past Orders" wrappingWidth="262.6073303222656">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Pane fx:id="historyPane" layoutX="320.0" layoutY="97.0" prefHeight="231.0" prefWidth="270.0">
+         <children>
+            <Text fx:id="dishName111" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove an order from history?" textAlignment="CENTER" wrappingWidth="269.3333333333335">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="ordersBox" layoutX="13.0" layoutY="145.3447265625" prefHeight="25.0" prefWidth="245.0" promptText="Choose an order" />
+            <Button layoutX="194.0" layoutY="180.3447265625" mnemonicParsing="false" onAction="#removeOrderFromHistory" prefHeight="25.0" prefWidth="64.0" text="Remove">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Text fx:id="dishName1111" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start a new order?" textAlignment="CENTER" wrappingWidth="269.3333333333335">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Text>
+            <Button layoutX="68.0" layoutY="41.0" mnemonicParsing="false" onAction="#newOrderGoBackToMenu" prefHeight="25.0" prefWidth="134.0" text="Go to menu">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

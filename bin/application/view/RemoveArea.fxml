@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.AreaController">
+   <children>
+      <ComboBox fx:id="oldAreasBox" layoutX="41.0" layoutY="119.0" prefHeight="25.0" prefWidth="159.0" promptText="Open list" />
+      <Text fill="#3bcfdb" layoutX="39.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Remove area" wrappingWidth="375.94073486328125">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Button layoutX="39.0" layoutY="299.0" mnemonicParsing="false" onAction="#removeArea" prefHeight="25.0" prefWidth="74.0" text="Remove">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Text layoutX="41.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose area to remove">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose area to replace old area">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="newAreasBox" layoutX="39.0" layoutY="202.0" prefHeight="25.0" prefWidth="159.0" promptText="Open list" />
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MenuController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="625.0" opacity="0.44" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/best-takeout-apps-1586534744.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="menuPane" layoutX="30.0" layoutY="53.0" prefHeight="249.0" prefWidth="539.0">
+         <children>
+            <Text fx:id="dishName2" layoutX="7.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Name Dish Name" wrappingWidth="211.3003387451172">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="components2" fill="#454242" layoutX="7.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="comp1, comp2, comp3, comp4, comp1, comp2, comp3" wrappingWidth="508.46702575683594">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="price2" fill="#3bcfdb" layoutX="427.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" textAlignment="RIGHT" wrappingWidth="96.91146850585938">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="dishName3" layoutX="7.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Name Dish Name" wrappingWidth="228.18922424316406">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="components3" fill="#454242" layoutX="7.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="comp1, comp2, comp3, comp1, comp2, comp3, comp4" wrappingWidth="468.9114532470703">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="price3" fill="#3bcfdb" layoutX="427.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" textAlignment="RIGHT" wrappingWidth="96.91146850585938">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="415.2928466796875" layoutX="108.0" layoutY="211.0" startX="-100.0" />
+            <Button layoutX="8.0" layoutY="227.0" mnemonicParsing="false" onAction="#goToCart" prefHeight="24.0" prefWidth="107.0" text="Go to cart" textFill="#4a7bdd" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="add1" layoutX="375.0" layoutY="87.0" mnemonicParsing="false" onAction="#addAndRemoveDishToOrder" text="Add to order" />
+            <Button fx:id="remove1" layoutX="465.0" layoutY="87.0" mnemonicParsing="false" onAction="#addAndRemoveDishToOrder" text="Remove" />
+            <Button fx:id="add2" layoutX="375.0" layoutY="152.0" mnemonicParsing="false" onAction="#addAndRemoveDishToOrder" text="Add to order" />
+            <Button fx:id="remove2" layoutX="465.0" layoutY="152.0" mnemonicParsing="false" onAction="#addAndRemoveDishToOrder" text="Remove" />
+            <Button fx:id="add3" layoutX="375.0" layoutY="218.0" mnemonicParsing="false" onAction="#addAndRemoveDishToOrder" text="Add to order" />
+            <Button fx:id="remove3" layoutX="465.0" layoutY="218.0" mnemonicParsing="false" onAction="#addAndRemoveDishToOrder" text="Remove" />
+            <TextField fx:id="count1" editable="false" layoutX="334.0" layoutY="87.0" prefHeight="25.0" prefWidth="33.0" />
+            <TextField fx:id="count2" editable="false" layoutX="334.0" layoutY="152.0" prefHeight="25.0" prefWidth="33.0" />
+            <TextField fx:id="count3" editable="false" layoutX="334.0" layoutY="218.0" prefHeight="25.0" prefWidth="33.0" />
+            <Text fx:id="dishName1" layoutX="7.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dish Name Dish Name" wrappingWidth="210.41146850585938">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="components1" fill="#454242" layoutX="7.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="comp1, comp2, comp3, comp4, comp1, comp2, comp3" wrappingWidth="511.7259521484375">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="price1" fill="#3bcfdb" layoutX="427.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price" textAlignment="RIGHT" wrappingWidth="96.91146850585938">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Line endX="415.2928466796875" layoutX="108.0" layoutY="146.0" startX="-100.0" />
+            <Line endX="410.7259521484375" layoutX="112.0" layoutY="81.0" startX="-100.0" />
+         </children>
+      </Pane>
+      <Button fx:id="startersButton" layoutX="32.0" layoutY="33.0" mnemonicParsing="false" onAction="#chooseType" prefHeight="32.0" prefWidth="165.0" text="Starters" textFill="#38ced9">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="dessertsButton" layoutX="401.0" layoutY="34.0" mnemonicParsing="false" onAction="#chooseType" prefHeight="32.0" prefWidth="166.0" text="Desserts" textFill="#38ced9">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="mainsButton" layoutX="217.0" layoutY="33.0" mnemonicParsing="false" onAction="#chooseType" prefHeight="32.0" prefWidth="166.0" text="Mains" textFill="#38ced9">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

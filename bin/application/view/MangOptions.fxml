@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.MangOptionsController">
+   <children>
+      <BorderPane fx:id="pannelRoot" prefHeight="400.0" prefWidth="600.0" />
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exitSystem" text="Exit" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+               <items>
+                <Menu mnemonicParsing="false" text="Add new">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#addCook" text="Cook" />
+                        <MenuItem mnemonicParsing="false" onAction="#addCustomer" text="Customer" />
+                        <MenuItem mnemonicParsing="false" onAction="#addDeliveryPerson" text="Delivery Person" />
+                        <MenuItem mnemonicParsing="false" onAction="#addComponent" text="Component" />
+                        <MenuItem mnemonicParsing="false" onAction="#addDish" text="Dish" />
+                        <MenuItem mnemonicParsing="false" onAction="#addOrder" text="Order" />
+                        <MenuItem mnemonicParsing="false" onAction="#addArea" text="Delivery Area" />
+                        <Menu mnemonicParsing="false" text="Delivery">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#addRegularDelivery" text="Regular Delivery" />
+                              <MenuItem mnemonicParsing="false" onAction="#addExpressDelivery" text="Express Delivery" />
+                           </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Update Details">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#updateCook" text="Cook" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateCustomer" text="Customer" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateDeliveryPerson" text="Delivery Person" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateComponent" text="Component" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateDish" text="Dish" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateOrder" text="Order" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateDeliveryArea" text="Delivery Area" />
+                        <MenuItem mnemonicParsing="false" onAction="#updateDelivery" text="Delivery" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Remove">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#removeCook" text="Cook" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeCustomer" text="Customer" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeDeliveryPerson" text="Delivery Person" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeComponent" text="Component" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeDish" text="Dish" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeOrder" text="Order" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeArea" text="Delivery Area" />
+                        <MenuItem mnemonicParsing="false" onAction="#removeDelivery" text="Delivery" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#viewCook" text="Cook" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewCustomer" text="Customer" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDeliveryPerson" text="Delivery Person" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewComponent" text="Component" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDish" text="Dish" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewOrder" text="Order" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDeliveryArea" text="Delivery Area" />
+                  <MenuItem mnemonicParsing="false" onAction="#viewDelivery" text="Delivery" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Queries">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#querieGetDeliveriesByPerson" text="Deliveries By Person" />
+                  <MenuItem mnemonicParsing="false" onAction="#querieNumberOfDeliveriesPerType" text="Deliveries Per Type" />
+                  <MenuItem mnemonicParsing="false" onAction="#querieRevenueFromExpressDeliveries" text="Revenue From Express Deliveries" />
+                  <MenuItem mnemonicParsing="false" onAction="#queriePopularComponents" text="Popular Components" />
+                  <MenuItem mnemonicParsing="false" onAction="#querieProfitRelation" text="Time-Price Profit Relation" />
+                  <MenuItem mnemonicParsing="false" onAction="#querieAIMachine" text="AI Machine" />
+                  <MenuItem mnemonicParsing="false" onAction="#querieRelevantDishList" text="Relevant Dish List" />
+                  <MenuItem mnemonicParsing="false" onAction="#querieCookByExpert" text="Cooks By Expertise" />
+                  <MenuItem mnemonicParsing="false" onAction="#blackList" text="Black List" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane layoutX="262.0" prefHeight="25.0" prefWidth="221.0">
+         <children>
+            <Button alignment="TOP_RIGHT" contentDisplay="RIGHT" layoutX="277.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" textFill="#e01212">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

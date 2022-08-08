@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.OrderController">
+   <children>
+      <TextField fx:id="orderID" layoutX="112.0" layoutY="93.0" prefHeight="25.0" prefWidth="100.0" />
+      <Text fill="#3bcfdb" layoutX="39.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="View order details" wrappingWidth="470.60736083984375">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="219.0" layoutY="93.0" mnemonicParsing="false" onAction="#orderByID" text="View" />
+      <Text layoutX="39.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="39.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dishes:" wrappingWidth="149.33333333333348">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery number:" wrappingWidth="192.66664632161473">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="idText" layoutX="66.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="customerText" layoutX="134.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="deliveryNumText" layoutX="194.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="dishesText" layoutX="104.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="79.0" fitWidth="600.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/line.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
